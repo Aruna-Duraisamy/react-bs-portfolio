@@ -1,6 +1,9 @@
 import Particles from "./components/Particles";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import SideBar from "./components/SideBar";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -8,15 +11,14 @@ function App() {
       <Particles id="tsparticles" />
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
-            <div className=" app_main">
-              <main>
-                <div className="px-3 py-2 text-white">
-                  <div className="container" style={{ opacity: 1 }}>
-                    <AboutMe />
-                  </div>
-                </div>
-              </main>
+          <div className="col-lg-3">
+            <SideBar />
+          </div>
+          <div className="col-lg-9">
+            <div className="app_main">
+              <Navbar />
+              <hr />
+              <Main />
             </div>
           </div>
         </div>
