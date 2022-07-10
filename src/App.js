@@ -17,7 +17,7 @@ function App() {
           <div className="col-lg-9">
             <div className="app_main">
               <Navbar />
-              <hr />
+              <hr className="mt-0" />
               <Main />
             </div>
           </div>

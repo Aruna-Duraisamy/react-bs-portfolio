@@ -3,30 +3,29 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="">
-      <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-        <ul class="navbar-nav bd-navbar-nav flex-row">
-          <li class="nav-item active">
-            <a class="nav-link " href="/">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/">
-              Resume
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/">
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/">
-              Feedback
-            </a>
-          </li>
-        </ul>
-      </header>
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        <a
+          class="flex-sm-fill text-sm-center nav-link active"
+          aria-current="page"
+          href="./AboutMe"
+        >
+          About Me
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="./Resume">
+          Resume
+        </a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="./Projects">
+          Projects
+        </a>
+        <a
+          class="flex-sm-fill text-sm-center nav-link disabled"
+          href="./Feedback"
+          tabindex="-1"
+          aria-disabled="true"
+        >
+          Feedback
+        </a>
+      </nav>
     </div>
   );
 };
